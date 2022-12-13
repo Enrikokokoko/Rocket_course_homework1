@@ -37,11 +37,11 @@ fs.readdir(maindDir)
             .then(value =>{
                 let fileJson = JSON.parse(value)
               
-                if(fileJson.gender === 'male' || typeof fileJson.gender === string) {
+                if(fileJson.gender === 'male') {
                     let boysPath = path.join('./boys',key)
                     fs.rename(fileWay,boysPath).then()
                 }
-                if (fileJson.gender === 'female' || typeof fileJson.gender === string) {
+                if (fileJson.gender === 'female') {
                     let girlsPath = path.join('./girls',key)
                     fs.rename(fileWay,girlsPath).then()
                 }
