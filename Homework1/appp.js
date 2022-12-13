@@ -19,7 +19,7 @@ fs.readdir(maindDir)
     //     let dir = element
 
     console.log(value);
-    for (const string of value) {
+    for (let string of value) {
 
        let dir = string;
         if(dir === 'appp.js'){
@@ -29,8 +29,8 @@ fs.readdir(maindDir)
     fs.readdir(path.join(dir))
     .then(value =>{
         
-        for(const key of value){
-            const fileWay = path.join(dir,key);
+        for(let key of value){
+            let fileWay = path.join(dir,key);
 
        
             fs.readFile(fileWay)
